@@ -7,7 +7,7 @@ function binarySearch(list, element) {
       if (list[midindex] === element) { //checks if middle index is equal to element
         return midindex;
       }
-      else if (list[midindex] > element) { // If middle index is less then element, it updates low index
+      if (list[midindex] > element) { // If middle index is less then element, it updates low index
         highindex = midindex - 1;
       }
       else {
