@@ -1,10 +1,12 @@
+
+
 function binarySearch(list, element) { 
     let lowindex = 0;  
     //let midindex = 0;
     let highindex = list.length - 1;
 
     while (lowindex <= highindex) { 
-    let midindex = Math.floor((lowindex + highindex) / 2); //Calculate the middle index of it's range
+        let midindex = Math.floor((lowindex + highindex) / 2); //Calculate the middle index of it's range
       if (list[midindex] === element) { //checks if middle index is equal to element
         return midindex;
       }
