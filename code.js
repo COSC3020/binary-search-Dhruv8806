@@ -7,13 +7,14 @@ function binarySearch(list, element) {
 
     while (lowindex <= highindex) { 
         let midindex = Math.floor((lowindex + highindex) / 2); //Calculate the middle index of it's range
-      if (list[midindex] === element) { //checks if middle index is equal to element
-        return midindex;
+        
+        if (list[midindex] === element) { //checks if middle index is equal to element
+            return midindex;
       }
+        
       if (list[midindex] < element) {  // If middle index is less then element, it updates low index
         lowindex = midindex + 1;
-      } 
-      else {
+      } else {
         highindex = midindex - 1;  // If middle index is greater, than it updates high index
       }
     }
