@@ -1,7 +1,7 @@
 function binarySearch(list, element) { 
-    var lowindex = 0;  
-    var midindex;
-    var highindex = list.length - 1;
+    let lowindex = 0;  
+    let midindex;
+    let highindex = list.length - 1;
 
     while (lowindex <= highindex) { 
         midindex = Math.floor((lowindex + highindex) / 2); //Calculates the middle index 
